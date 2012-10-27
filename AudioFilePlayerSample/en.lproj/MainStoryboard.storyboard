@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="kU0-ya-xSN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="kU0-ya-xSN">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
         <!--Music List View Controller - Music-->
         <scene sceneID="SJD-u6-ga4">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w2W-mm-hgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="iXg-8z-WgJ" customClass="MusicListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qBM-jB-CuZ">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -41,13 +39,13 @@
                         <segue destination="1zQ-LC-35z" kind="push" identifier="showPlayerSegue" id="ZUd-9y-xWN"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w2W-mm-hgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="676" y="39"/>
         </scene>
         <!--Player View Controller - Player-->
         <scene sceneID="w2L-Ej-WxH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n2a-Iq-Gu7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Player" id="1zQ-LC-35z" customClass="PlayerViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c0W-bb-feA">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
@@ -57,7 +55,7 @@
                                 <rect key="frame" x="20" y="191" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="loop:" destination="n2a-Iq-Gu7" eventType="valueChanged" id="RIz-bS-VzP"/>
+                                    <action selector="loop:" destination="1zQ-LC-35z" eventType="valueChanged" id="nyK-70-Cwi"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Loop" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="KJa-BK-IQ8">
@@ -71,7 +69,7 @@
                                 <rect key="frame" x="18" y="117" width="284" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="startTime:" destination="n2a-Iq-Gu7" eventType="valueChanged" id="i67-za-scc"/>
+                                    <action selector="startTime:" destination="1zQ-LC-35z" eventType="valueChanged" id="r15-XG-WGY"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OeG-Ls-bzQ">
@@ -86,7 +84,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="play:" destination="n2a-Iq-Gu7" eventType="touchUpInside" id="gn3-wb-tKq"/>
+                                    <action selector="play:" destination="1zQ-LC-35z" eventType="touchUpInside" id="jSO-1r-r6k"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Odu-Dh-khC">
@@ -101,7 +99,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="stop:" destination="n2a-Iq-Gu7" eventType="touchUpInside" id="DIt-q4-D8g"/>
+                                    <action selector="stop:" destination="1zQ-LC-35z" eventType="touchUpInside" id="hZv-5r-jSy"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Position" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="u8r-Gl-QIm">
@@ -115,7 +113,7 @@
                                 <rect key="frame" x="18" y="266" width="284" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="reverbMix:" destination="n2a-Iq-Gu7" eventType="valueChanged" id="hKq-nC-F7R"/>
+                                    <action selector="reverbMix:" destination="1zQ-LC-35z" eventType="valueChanged" id="eg9-hL-coq"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Reverb Mix" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="oAX-di-c6e">
@@ -129,7 +127,7 @@
                                 <rect key="frame" x="18" y="327" width="284" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="variSpeed:" destination="1zQ-LC-35z" eventType="valueChanged" id="fhv-9k-i45"/>
+                                    <action selector="variSpeed:" destination="1zQ-LC-35z" eventType="valueChanged" id="XF0-ZO-mIT"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Vari Speed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="vGr-to-4yV">
@@ -158,13 +156,13 @@
                         <outlet property="variSpeedSlider" destination="gWt-Ax-iEo" id="hEi-iX-1pR"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n2a-Iq-Gu7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1160" y="39"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fVa-rz-Os4">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aah-jG-9fx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="kU0-ya-xSN" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Ifz-Oo-7Ym">
                         <autoresizingMask key="autoresizingMask"/>
@@ -173,6 +171,7 @@
                         <segue destination="iXg-8z-WgJ" kind="relationship" relationship="rootViewController" id="mMJ-2D-ukx"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aah-jG-9fx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="158" y="39"/>
         </scene>
